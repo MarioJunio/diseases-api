@@ -1,0 +1,21 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: 1
+      author: Mario
+
+  - include:
+      file: DDL/001_create_tables.sql
+      relativeToChangelogFile: true
+
+  - include:
+      file: DML/001_insert_data_symptoms.sql
+      relativeToChangelogFile: true
+
+  - include:
+      file: DML/002_insert_data_diseases.sql
+      relativeToChangelogFile: true
+
+  - include:
+      file: DML/003_insert_data_disease_symptoms.sql
+      relativeToChangelogFile: true
